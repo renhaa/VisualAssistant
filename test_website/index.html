@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=n3lwt2n4"></script>
+
+<!-- <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+</audio> -->
+      
+<!-- 
+<p>Before the script...</p>
+  <script>
+    alert( 'Hello, world!' );
+  </script>
+  <p>...After the script.</p> -->
+
+<script>
+responsiveVoice.setDefaultVoice("US English Female");
+var voicelist = responsiveVoice.getVoices();
+
+document.write(voicelist.toString());
+
+function play() {
+  var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3');
+  audio.play();
+}
+ 
+</script>
+
+<p>Script 3</p>
+
+<script>
+play()
+</script>
+
+</body>
+
+</html>
+
